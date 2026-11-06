@@ -43,7 +43,8 @@ composer require vidarl/ibexa-bulk-operation-guard
 
 The package is on Packagist, so no `repositories` entry is needed.
 
-Then register the bundle in `config/bundles.php`:
+Symfony Flex registers the bundle for you — every Ibexa skeleton ships with Flex. In a project
+without it, add the bundle to `config/bundles.php` by hand:
 
 ```php
 VidarL\IbexaBulkOperationGuardBundle\VidarLIbexaBulkOperationGuardBundle::class => ['all' => true],
